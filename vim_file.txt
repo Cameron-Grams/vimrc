@@ -1,0 +1,8 @@
+:set number
+:set expandtab
+:set tabstop=4
+:set ruler
+:colorscheme morning
+:set relativenumber
+:inoremap jk <esc>
+:inoremap kj <esc>
