@@ -4,10 +4,15 @@
 :set ruler
 :colorscheme morning
 :set relativenumber
+
+"simplier use of escape
 :inoremap jk <esc>
 :inoremap kj <esc>
+:inoremap <Left> <esc>
+
 "move between slpits;
 :nnoremap <C-J> <C-W><C-J>
 :nnoremap <C-K> <C-W><C-K>
 :nnoremap <C-L> <C-W><C-L>
 :nnoremap <C-H> <C-W><C-H>
+
