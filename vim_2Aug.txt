@@ -1,0 +1,25 @@
+:syntax on
+
+:set number
+:set relativenumber
+
+:set expandtab
+:set tabstop=4
+:set ruler
+:colorscheme morning 
+
+:inoremap jf <esc>
+:inoremap fj <esc>
+
+:nnoremap <C-J> <C-W><C-J>
+:nnoremap <C-K> <C-W><C-K>
+:nnoremap <C-L> <C-W><C-L>
+:nnoremap <C-H> <C-W><C-H>
+:inoremap <Left> <esc>
+
+:set hlsearch
+
+:match ErrorMsg /\%>73v.\+/
+
+:set cursorline
+:highlight CursorLine guibg=lightblue ctermbg=lightgray
