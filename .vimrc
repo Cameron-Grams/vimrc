@@ -19,6 +19,7 @@ nmap <leader>l :set list!<CR>
 :set tabstop=4
 :set ruler
 :set relativenumber
+:set numberwidth=3 
 
 :inoremap jf <esc>
 :inoremap fj <esc>
@@ -27,4 +28,15 @@ nmap <leader>l :set list!<CR>
 :nnoremap <C-K> <C-W><C-K>
 :nnoremap <C-L> <C-W><C-L>
 :nnoremap <C-H> <C-W><C-H>
+
+:echo '========'
+:echo '(>^.^<)'
+:echo ' \ ! / '
+:echo '  -v-  '
+
+:map - dd
+:map <space> viw
+:map + ddp
+
+
 
