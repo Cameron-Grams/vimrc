@@ -30,13 +30,14 @@ nmap <leader>l :set list!<CR>
 :nnoremap <C-H> <C-W><C-H>
 
 :echo '========'
-:echo '(>^.^<)'
-:echo ' \ ! / '
-:echo '  -v-  '
+:echo "mod version 3"
 
 :map - dd
 :map <space> viw
 :map + ddp
+
+"added 12 Dec 17
+:match ErrorMsg /\%>73v.\+/
 
 
 
