@@ -76,13 +76,3 @@ set statusline+=\ %l:%c
 set statusline+=\ 
 
 
-
-
-
-
-
-
-=======
->>>>>>> 7e7a73e454209203a9b801a3bd17964ae32fde81
-
-
