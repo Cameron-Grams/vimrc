@@ -1,7 +1,3 @@
-:echo '========'
-:echo "mod version 4"
-:echo '========'
-
 execute pathogen#infect()
 
 :let mapleader = "\\"
@@ -32,6 +28,9 @@ nmap <leader>l :set list!<CR>
 :nnoremap <C-K> <C-W><C-K>
 :nnoremap <C-L> <C-W><C-L>
 :nnoremap <C-H> <C-W><C-H>
+
+:echo '========'
+:echo "mod version 4"
 
 :map - dd
 :map <space> viw
@@ -82,7 +81,5 @@ set statusline+=\
 
 
 
-=======
->>>>>>> 7e7a73e454209203a9b801a3bd17964ae32fde81
 
 

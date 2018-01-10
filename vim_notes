@@ -1,0 +1,28 @@
+http://learnvimscriptthehardway.stevelosh.com/preface.html
+
+
+https://kadekillary.work/post/learn-vim/
+
+https://dougblack.io/words/a-good-vimrc.html   read for an intro into a new .vimrc
+
+http://www.moolenaar.net/habits.html  mooleanar's advice
+
+f searches forward
+F searches backwards
+dfs will delete upto the next f
+
+c change command
+cc change line
+
+
+:map + ddp     has the effect of moving a line up
+
+:match ErrorMsg /\%>73v.\+/ has the effect of highlighting any characters over 73 with 
+  the Error message background highlight
+
+!!!  instant file explorer
+:Sex
+
+:highlight Normal ctermfg=grey ctermbg=darkblue   this will produce a blue background and grey font
+
+
