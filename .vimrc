@@ -30,13 +30,56 @@ nmap <leader>l :set list!<CR>
 :nnoremap <C-H> <C-W><C-H>
 
 :echo '========'
-:echo '(>^.^<)'
-:echo ' \ ! / '
-:echo '  -v-  '
+:echo "mod version 4"
 
 :map - dd
 :map <space> viw
 :map + ddp
+
+"added 12 Dec 17
+:match ErrorMsg /\%>73v.\+/
+
+
+
+
+"==========================================================
+"10 Jan 17 statusline mods
+
+
+
+"Display Git branch
+function! GitBranch()
+  return system("git rev-parse --abbrev-ref HEAD 2>/dev/null | tr -d '\n'")
+endfunction
+
+function! StatuslineGit()
+  let l:branchname = GitBranch()
+  return strlen(l:branchname) > 0?'  '.l:branchname.' ':''
+endfunction
+
+
+set laststatus=2
+set statusline=
+set statusline+=%#PmenuSel#
+set statusline+=%{StatuslineGit()}
+set statusline+=%#LineNr#
+set statusline+=\ %f
+set statusline+=%m\
+set statusline+=%=
+set statusline+=%#CursorColumn#
+set statusline+=\ %y
+set statusline+=\ %{&fileencoding?&fileencoding:&encoding}
+set statusline+=\[%{&fileformat}\]
+set statusline+=\ %p%%
+set statusline+=\ %l:%c
+set statusline+=\ 
+
+
+
+
+
+
+
 
 
 
