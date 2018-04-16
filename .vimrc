@@ -1,5 +1,5 @@
 :echo '========'
-:echo "mod version 4"
+:echo "mod version 5"
 :echo '========'
 
 execute pathogen#infect()
@@ -37,14 +37,13 @@ nmap <leader>l :set list!<CR>
 :map <space> viw
 :map + ddp
 
-"added 12 Dec 17
 :match ErrorMsg /\%>73v.\+/
 
 
 
 
 "==========================================================
-"10 Jan 17 statusline mods
+"10 Jan 18 statusline mods
 
 
 
