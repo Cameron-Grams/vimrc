@@ -14,9 +14,9 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 
-"cursor line and column added 28 Feb 2019
+"cursor line and column added 7 Mar 2019
 set cursorline
-set cursorcolumn
+
 
 "original
 :let mapleader = "\\"
@@ -31,10 +31,13 @@ colorscheme moonshine
 " let g:sierra_Twilight = 1
 " colorscheme sierra
 
-"original
 ":set list
 :set listchars=eol:¬,space:·
 nmap <leader>l :set list!<CR>
+
+" on leader use cursor column 7 Maj
+" set cursorcolumn
+nmap <leader>c :set cursorcolumn!<CR>
 
 "original
 :inoremap jf <esc>
