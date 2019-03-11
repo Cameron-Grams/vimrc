@@ -2,8 +2,8 @@
 :echo "mod version 9"
 :echo '========'
 
-" 3 Jan added for base16 material hybrid
-" let g:base16_shell_path=base16-builder/output/shell/
+scriptencoding utf-8
+set encoding=utf-8
 
 set nocompatible
 set mouse=a
@@ -35,7 +35,7 @@ colorscheme moonshine
 :set listchars=eol:¬,space:·
 nmap <leader>l :set list!<CR>
 
-" on leader use cursor column 7 Maj
+" on leader use cursor column 7 Mar
 " set cursorcolumn
 nmap <leader>c :set cursorcolumn!<CR>
 
