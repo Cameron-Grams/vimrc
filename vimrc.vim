@@ -1,5 +1,5 @@
 :echo '========'
-:echo "mod version 9"
+:echo "mod version Sept 21"
 :echo '========'
 
 scriptencoding utf-8
@@ -17,20 +17,26 @@ set expandtab
 "cursor line and column added 7 Mar 2019
 set cursorline
 
-
 "original
 :let mapleader = "\\"
 
 " original
 syntax on
-set background=light
+
 set t_Co=256
 let g:solarized_termcolors=256
-colorscheme moonshine
-" change 3 Jan
-" let g:sierra_Twilight = 1
-" colorscheme sierra
+set background=dark
 
+
+"=============================
+" colorscheme info
+colorscheme gruvbox
+" colorscheme solarized
+" colorscheme moonshine
+
+
+"=============================
+" control features
 ":set list
 :set listchars=eol:¬,space:·
 nmap <leader>l :set list!<CR>
@@ -39,6 +45,11 @@ nmap <leader>l :set list!<CR>
 " set cursorcolumn
 nmap <leader>c :set cursorcolumn!<CR>
 
+"conditional exceed right margin
+nmap <leader>e :match ErrorMsg /\%>73v.\+/
+
+
+"=============================
 "original
 :inoremap jf <esc>
 :inoremap fj <esc>
@@ -53,15 +64,8 @@ nmap <leader>c :set cursorcolumn!<CR>
 :map - dd
 :map <space> viw
 :map + ddp
-:match ErrorMsg /\%>73v.\+/
 
-" from 18 Nov
-" call plug#begin('~/.vim/plugged')
-" Plug 'vim-airline/vim-airline'
-" Plug 'vim-airline/vim-airline-themes'
-" Plug 'airblade/vim-gitgutter'
-" call plug#end()
-"
+
 
 "==========================================================
 "7 Feb older statusline mods
@@ -91,16 +95,6 @@ set statusline+=\ %{&fileencoding?&fileencoding:&encoding}
 set statusline+=\[%{&fileformat}\]
 set statusline+=\ %p%%
 set statusline+=\ %l:%c
-set statusline+=\ 
-
-"=============================================================
-" 10 Feb for jsx and react highlights
-call plug#begin('~/.vim/plugged')
-
-Plug 'mxw/vim-jsx'
-Plug 'pangloss/vim-javascript'
-
-call plug#end()
-
+set statusline+=\
 
 
